@@ -16,6 +16,5 @@ Open a command window and run:
 This runs Cucumber features using Cucumber's JUnit Platform Engine. The `Suite`
 annotation on the `RunCucumberTest` class tells JUnit to kick off Cucumber.
 
-## Results
-
-Can be found in the target/cucumber-reports/report.html
+## Run test without maven
+Run the runner file (RunCucumberTest) located in /src/test/java/io/cucumber/runners/RunCucumberTest.java
