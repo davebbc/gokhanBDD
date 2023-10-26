@@ -40,9 +40,9 @@ public class StepDefinitions {
         validatableResponse = response.then().statusCode(statusCode);
     }
 
-    @When("I send a POST request to object endpoint")
-    public void iSendAPOSTRequestToObjectEndpoint() {
-        response = request.post(hostUri+"/objects");
+    @When("I send a POST request to {string} with the object data")
+    public void iSendAPOSTRequestToWithTheObjectData(String endPoint) {
+        response = request.post(hostUri+endPoint);
     }
 
     @When("I send a DELETE request to {string}")

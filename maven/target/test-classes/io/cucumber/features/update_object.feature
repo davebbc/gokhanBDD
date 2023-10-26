@@ -3,7 +3,7 @@ Feature: Update object scenarios
   @apiSmoke
   Scenario: Update a new object with existing json request
     Given I create a new object with random details
-    And I send a POST request to object endpoint
+    And I send a POST request to "/objects" with the object data
     And the response status code is 200
     And the response should contain the following values:
       | name | Apple MacBook Pro 13 |
@@ -17,7 +17,7 @@ Feature: Update object scenarios
   @apiSmoke
   Scenario: Update object name from Apple MacBook Pro 13 to 11
     Given I create a new object with random details
-    And I send a POST request to object endpoint
+    And I send a POST request to "/objects" with the object data
     And the response status code is 200
     And the response should contain the following values:
       | name | Apple MacBook Pro 13 |

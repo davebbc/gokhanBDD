@@ -3,7 +3,7 @@ Feature: Delete object scenarios
   @apiSmoke
   Scenario: Delete an object and then delete
     Given I create a new object with random details
-    And I send a POST request to object endpoint
+    And I send a POST request to "/objects" with the object data
     And the response status code is 200
     And I get the object id
     When I delete the object with the object id
