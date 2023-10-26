@@ -9,7 +9,7 @@ Git:
 ## Use Maven
 
 Open a command window and run:
-
+    cd maven
     mvn clean install
 
 This runs Cucumber features using Cucumber's JUnit Platform Engine. The `Suite`
