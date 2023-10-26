@@ -15,3 +15,7 @@ Open a command window and run:
 
 This runs Cucumber features using Cucumber's JUnit Platform Engine. The `Suite`
 annotation on the `RunCucumberTest` class tells JUnit to kick off Cucumber.
+
+## Results
+
+Can be found in the Target/Cucumber-reports/report.html
