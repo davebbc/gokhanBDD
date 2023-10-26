@@ -22,14 +22,14 @@ Feature: Create object scenarios
       | name | iPhone 16 Pro |
 
   @apiSmoke
-  Scenario: Attepmt to create a object with unsupported media
+  Scenario: Attempt to create a object with unsupported media
     When I send a POST request to object endpoint
     Then the response status code is 415
     And the response should contain the following values:
       | error | 415 Unsupported Media Type. The 415 status code indicates that the origin server is refusing to service the request because the payload is in a format not supported by this method on the target resource. One of the examples of getting 415 would be sending a request with a Content-Type header which is not equal to application/json |
 
   @apiSmoke
-  Scenario: Attepmt to create a object with empty body
+  Scenario: Attempt to create a object with empty body
     Given I have a empty body request
     When I send a POST request to object endpoint
     Then the response status code is 400
